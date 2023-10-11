@@ -7,11 +7,121 @@
     <link rel="stylesheet" href="style.css">
     </head>
 <body>
-    <h1>Survey for a Retreat</h1>
-    <form>
-
-
+     
+        <h1 id="title">2023 Fall Camping Trip</h1>
         
-    </form>
+  <!-- Survey form with personal Info --> 
+  
+  <form id="survey-form" method="post" action="codingworld@email.com">
+        
+    <h2>Get ready for this year's annual employee appreciation week!</h2>
+            <p id="description">We are going <strong>CAMPING</strong> this year but <b>YOU</b> choose the location.<br> Please fill out survey below to vote your preference for the outing.<br>**Please note this is an employee <strong>and</strong> family friendly event.**</p>
+
+        <fieldset>
+            <p><u><b>Contact Information</u></b></p>
+            <label id="name-label" for="full-name">Name: <input id="name" name="name" type="text" placeholder="Full name"required /></label>
+            <label id="phone-label" for="phone">Phone Number: <input id="phone" name="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(000)-000-0000" required /></label>
+            <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="email@mail.com" required /></label>
+        <hr>
+      
+         <label>Will you be attending?
+             <select id="dropdown" required >
+                 <option></option>
+                <option>Yes</option>
+                 <option>No</option>
+             </select>
+          </label>
+        <label id="number-label" for="number">Number of people attending (including self): <input id="number" type="number" min="1" max="6" placeholder="select" required /></label>
+
+            <hr>
+            
+            <p><u><b>Please choose your department</u></b></p>
+            <label for="project-management"><input id="project-management" type="radio" value="project-m" name="employment" class="inline" /> Project Management</label>
+            <label for="full-stack-developer"><input id="full-stack-developer" type="radio" value="full-stack" name="employment" class="inline" /> Full Stack Developer</label>
+            <label for="it-department"><input id="it-department" type="radio" value="it-dept" name="employment" class="inline" /> IT Department</label>
+        </fieldset>
+<!-- Survey form for trip options-->
+
+<h3>Camping Trip Options</h3>
+       <fieldset>
+        <ol>
+          <li>Have you visited any of the sites we are considering? If so, which one(s)?</li>
+          <input type="checkbox" value="Yellowstone" id="park1" name="park1">Yellowstone National Park</input>
+          <img src="oldFaithful__Yellowstone.jpg" alt="Old Faithful, Yellowstone">
+          <br>
+          <input type="checkbox" value="Devils-tower" id="park2" name="park2">Devil's Tower National Monument</input>
+          <img src="Devils-Tower-Wyoming.jpg" alt="Devil's Tower WY">
+          <br>
+          <input type="checkbox" value="mojave">Mojave National Preserve</input>
+          <img src="Mojave-Preserve-Twentynine-Palms (1).jpg" alt="Mojave Trails ">
+          <br>
+          <input type="checkbox" value="Yosemite-national">Yosemite National Park</input>
+          <img src="Tunnel_View_Yosemite_Valley.jpg" alt="Yosemite-national-park">
+          <br>
+          <input type="checkbox" value="grand-canyon">Grand Canyon National Park</input>
+          <img src="gettyimages-858637934.jpg" alt="Grand Caynon">
+          <br>
+
+          <br>
+
+            <li>Select your first choice.</li>
+        <select>
+            <option value="">Select one</option>
+            <option value="1">Yellow Stone National Park, WY</option>
+            <option value="2">Devil's Tower National Monument, WY</option>
+            <option value="3">Mojave National Preserve, CA</option>
+            <option value="4">Yosemite National Park, CA</option>
+            <option value="5">Grand Caynon National Park, CO</option>
+                </select>
+    <br>
+  
+   <br>
+        <li>Select your second choice.</li>
+        <select>
+            <option value="">Select one</option>
+            <option value="1">Yellow Stone National Park, WY</option>
+            <option value="2">Devil's Tower National Monument, WY</option>
+            <option value="3">Mojave National Preserve, CA</option>
+            <option value="4">Yosemite National Park, CA</option>
+            <option value="5">Grand Caynon National Park, CO</option>
+                </select>
+<br>
+    
+
+   
+     <br>
+        <li>Select the week of preferred choice.</li>
+        <select>
+            <option value="">Select one</option>
+            <option value="1">Sunday 10/15 - Saturday 10/21</option>
+            <option value="2">Saturday 10/21 - Friday 10/27</option>
+            <option value="3">Sunday 10/29 - Saturday 11/4</option>
+                </select>
+
+        <br>
+
+     <br>
+        <li>Select your preferred camping method.</li>
+        <select>
+            <option value="">Select one</option>
+            <option value="1">Old Fashion (tents, hammocks, & fires)</option>
+            <option value="2">Cabin Camping (space heaters & cots)</option>
+            <option value="3">Glamping (electricity & comfy beds)</option>
+                </select>
+    </ol>
+
+    <label for="comments">Any additional comments for the upcoming trip. 
+        <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I want to suggest..." ></textarea>
+    </label>
+</fieldset>
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+  <hr>
+  <footer>
+    <h4>Survey Form for Employee Outing 2023 <br> Contact HR: <a href="galaxyworld@email.com">galaxyworld@email.com</a>
+        <p id="contact info">Galaxy World Code<br>123 Sunset Drive<br>SomeCity, TN 12345<br>(123)-456-7890</p></p>
+    </h4>
+
+</footer>  
 </body>
 </html>
